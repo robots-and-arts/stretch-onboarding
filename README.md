@@ -14,15 +14,14 @@ To begin, read these two pieces of official documentation from Hello Robot.
 ## [1] Startup procedure
 
 1. Flip the power switch and wait a few seconds for the motors to start before removing the clamp from the lift.
-2. The robot will start up with the gamepad teleop program running. If you want to do anything else, you’ll need to kill that process by running `stretch_free_robot_process.py`
-3. Before you can move the robot, you’ll need to home it (either through the command line or gamepad).
+2. Upon startup, the robot must be homed before it can be moved. Run the homing procedure through the command line with `python stretch_robot_home.py`.
 
 ## [2] Shutdown procedure
 
 1. If the arm is extended, retract it first.
 2. Clamp the arm on the lift under the shoulder.
 3. Shut down the robot computer (`sudo shutdown -h now` or however else)
-4. Turn off the power switch
+4. Turn off the power switch.
 5. Plug in the robot in the room, and check the [indicator on the charger](https://docs.hello-robot.com/0.3/hardware/battery_maintenance_guide_se3/#noco-genius-10-interface) to make sure it is indeed charging! The white light should be in the box labelled 12V AGM.
 
 ## [3] Connecting to the robot
@@ -57,7 +56,7 @@ The robot can be controlled through game teleoperation or with Python code.
 
 ### a. Gamepad teleoperation
 
-Run the gamepad teleop script in the terminal (`stretch_gamepad_teleop.py`). Then follow the [Gamepad Teleoperation intructions](https://docs.hello-robot.com/0.3/getting_started/hello_robot/#gamepad-teleoperation) to connect the gamepad controller and move the robot.
+Run the gamepad teleop script in the terminal (`python stretch_gamepad_teleop.py`). Then follow the [Gamepad Teleoperation intructions](https://docs.hello-robot.com/0.3/getting_started/hello_robot/#gamepad-teleoperation) to connect the gamepad controller and move the robot.
 
 ![controller](assets/controller_labeled.png)
 
@@ -66,6 +65,11 @@ Run the gamepad teleop script in the terminal (`stretch_gamepad_teleop.py`). The
 
 To control the robot with Python commands, first take a look at this [Writing Code tutorial](https://docs.hello-robot.com/0.3/getting_started/writing_code/) on getting started with the Stretch Body Robot API. Then, reference [Commanding Stretch to Move](https://docs.hello-robot.com/0.3/python/moving/) to explore the various robot joints and methods of control.
 
+To manage code on the robot, each student should create a directory under `~/student_code` with their SUNet ID (e.g. `~/student_code/mpan8`). Dependencies should be managed using [venv](https://docs.python.org/3/library/venv.html):
+1. From within the student directory, create a virtual environment with `python -m venv .venv`
+2. Activate the environment upon starting the robot wih `source .venv/bin/activate`. All dependencies must be installed within this environment.
+
+There are two code examples in the `examples/` folder that demonstrate how to work with the camera on the robot's head.
 
 ## [5] Transporting the robot
 
