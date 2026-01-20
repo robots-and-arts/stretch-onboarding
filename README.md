@@ -56,7 +56,7 @@ The robot can be controlled through game teleoperation or with Python code.
 
 ### a. Gamepad teleoperation
 
-Run the gamepad teleop script in the terminal (`python stretch_gamepad_teleop.py`). Then follow the [Gamepad Teleoperation intructions](https://docs.hello-robot.com/0.3/getting_started/hello_robot/#gamepad-teleoperation) to connect the gamepad controller and move the robot.
+Run the gamepad teleop script in the terminal (`stretch_gamepad_teleop.py`). Then follow the [Gamepad Teleoperation intructions](https://docs.hello-robot.com/0.3/getting_started/hello_robot/#gamepad-teleoperation) to connect the gamepad controller and move the robot.
 
 ![controller](assets/controller_labeled.png)
 
