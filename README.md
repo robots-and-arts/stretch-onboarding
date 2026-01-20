@@ -38,6 +38,8 @@ Connect to the robot either through SSH or directly on the onboard computer.
     | --- | --- |
     | **inky** | 171.64.68.11 |
 
+    By default students should use the shared `cs334` user account, which you will receive the password to upon completion of training. If a project requires more involved configuration of the robot, discuss with course staff about setting up a separate user account.
+
 ### b. Direct connection
 
 1. Use the monitor, keyboard, and mouse on the rolling cart in the robot room.
