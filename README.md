@@ -14,7 +14,7 @@ To begin, read these two pieces of official documentation from Hello Robot.
 ## [1] Startup procedure
 
 1. Flip the power switch and wait a few seconds for the motors to start before removing the clamp from the lift.
-2. Upon startup, the robot must be homed before it can be moved. Run the homing procedure through the command line with `python stretch_robot_home.py`.
+2. Upon startup, the robot must be homed before it can be moved. Run the homing procedure through the command line with `stretch_robot_home.py` or `home`.
 
 ## [2] Shutdown procedure
 
@@ -58,8 +58,7 @@ The robot can be controlled through game teleoperation or with Python code.
 
 ### a. Gamepad teleoperation
 
-Run the gamepad teleop script in the terminal (`stretch_gamepad_teleop.py`). Then follow the [Gamepad Teleoperation intructions](https://docs.hello-robot.com/0.3/getting_started/hello_robot/#gamepad-teleoperation) to connect the gamepad controller and move the robot.
-
+Run the gamepad teleop script in the terminal (`stretch_gamepad_teleop.py` or `gamepad`). Then follow the [Gamepad Teleoperation intructions](https://docs.hello-robot.com/0.3/getting_started/hello_robot/#gamepad-teleoperation) to connect the gamepad controller and move the robot.
 ![controller](assets/controller_labeled.png)
 
 
