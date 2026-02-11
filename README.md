@@ -45,7 +45,7 @@ Connect to the robot either through SSH or directly on the onboard computer.
 1. Use the monitor, keyboard, and mouse on the rolling cart in the robot room.
     1. *There might be multiple keyboards.. use the one that has a built-in trackpad.*
 2. Plug in the cart (this should be the thickest cable). It’s not enough to just plug in the monitor!
-3. Turn on the monitor (rightmost button) and switch it into VGA input mode (second rightmost button). 
+3. Turn on the monitor (rightmost button) and switch it into DVI input mode (second rightmost button). 
 
 **Common issues:**
 
