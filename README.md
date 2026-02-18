@@ -31,7 +31,8 @@ Connect to the robot either through SSH or directly on the onboard computer.
 ### a. SSH
 
 1. Make sure your laptop is on a Stanford network (eduroam is ok).
-2. Connect by running `ssh USER@ROBOT_IP` and enter your password when prompted.
+2. Check that the robot is connected to the SRC network. 
+3. Connect by running `ssh USER@ROBOT_IP` and enter your password when prompted.
     
     
     | ROBOT | IP ADDRESS |
